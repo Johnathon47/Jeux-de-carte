@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeux de carte</title>
+    <script src="carte.js" defer></script>
     <script src="jeu_de_carte.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="game-results">
+    <div id="presentation">
+        <input type="text" id="pseudo" placeholder="Entrez votre pseudo">
+    <div id="show-rules">
+        <!-- Affiche les règles du jeu -->
+    </div>
+    <button id="button-valid" onclick="menu()">Validez votre pseudo et voir les règles du jeu</button>
+    </div>
+    
+   <div id="play">
+     <div id="game-results">
         <!-- Les résultats du jeu seront affichés ici -->
     </div>
 
-    <button onclick="jouer()">Commencer le jeu</button>
+    <button id="button-play" onclick="jouer()">Commencer le jeu</button>
+   </div>
 </body>
 </html>
